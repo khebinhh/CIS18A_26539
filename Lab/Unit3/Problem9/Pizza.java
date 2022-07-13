@@ -16,7 +16,7 @@ class Pizza {
         double discount = 0;
 
         for(int i=0; i<5; i++) {
-            System.out.println("When you order " + pizzas[i][1] + " pizzas,");
+            System.out.println("When you order " + pizzas[i][1] + "  pizzas,");
             System.out.println("You get a discount of $" + pizzas[i][0] + " dollars.");
             for(int j=0; j<1; j++){
                 pizzas[i][j] = pizzas[i][0] / pizzas[i][1];
