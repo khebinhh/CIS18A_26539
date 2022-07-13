@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.*;
 class Loan{
     int employment; //validity of how many years
-    int years, salary; //input of amount of years and salary
+    int income; //input of amount of years and salary
 }
 class Bank {
     public static void main(String args[]) throws java.io.IOException {
@@ -22,7 +22,7 @@ class Bank {
         Scanner sc = new Scanner(System.in);    // record user input
         System.out.print("Enter the number of years for your employment: ");
         if(sc.hasNextInt()){
-            user_loan.years_employment = sc.nextInt();
+            user1.employment = sc.nextInt();
             sc.nextLine();  //clear input buffer
         }
         else{
@@ -32,13 +32,26 @@ class Bank {
         System.out.println("Enter your yearly income: $");
 
         if(sc.hasNextInt()){
-            user_loan.yearly_income = sc.nextInt();
+            user1.income = sc.nextInt();
             sc.nextLine();  //clear input buffer
         }
         else{
             System.out.println("invalid input. try again.");
             System.exit(0);
         }
-        // 
+        // qualifications
+        int YEAR = 2;
+        int INCOME = 60000;
+
+        //user qualification
+        boolean year = (user1.employment  >= YEAR) ? true : false;    //use ? inplace of if-else
+        boolean income = (user1.income >= INCOME) ? true : false;
+        
+        if(year&&income){
+            System.out.println("Congratulations! You care eligible for the loan.");
+        }
+        else{
+            System.out.println("Get out of mi swamp >:c");
+        }
     }
 }

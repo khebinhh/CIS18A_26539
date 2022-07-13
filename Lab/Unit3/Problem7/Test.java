@@ -4,7 +4,7 @@ class Test {
 
         double avg[] = new double[6];    // average of test scores
 
-        double average;
+        double average = 0;
 
         for (int i = 0; i < 6; i++) {
             avg[i] = nums[i] / 6;
