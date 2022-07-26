@@ -17,7 +17,7 @@ class ByTwos implements Series{
     }
 }
 class SeriesDemo{
-    public static void main(string args[]){
+    public static void main(String args[]){
         ByTwos ob = new ByTwos();
 
         for (int i = 0; i < 5; i++)
