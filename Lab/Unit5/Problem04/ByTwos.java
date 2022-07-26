@@ -1,3 +1,4 @@
+package Lab.Unit5.Problem04;
 class ByTwos implements Series{
     int start; int val;
 

@@ -1,3 +1,4 @@
+package Lab.Unit5.Problem05;
 public interface MyIF{
     int getUserId();
 
