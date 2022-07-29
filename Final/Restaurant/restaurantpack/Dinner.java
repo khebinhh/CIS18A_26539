@@ -1,5 +1,6 @@
 package Final.Restaurant.restaurantpack;
-
+//access modifier
+//inheritance
 public class Dinner extends Lunch{
     private double newPrice = 0.0;
 
@@ -16,7 +17,7 @@ public class Dinner extends Lunch{
         System.out.println(super.itemNum + ": " + "The special is " + super.dishName + " at $" + newPrice);
     }
 
-    public String toString() {					//show method
+    public String toString() {
         return itemNum + ": " + dishName + "  $" + price;
     }
 

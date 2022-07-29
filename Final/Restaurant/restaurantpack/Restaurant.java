@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 class Restaurant{
     public static void main(String args[]) throws java.io.IOException {
-        //create an array for the lunch menu
+        //create an array as a new object for lunch
         Lunch lunchArray[] = new Lunch[9];
     
         lunchArray[0] = new Lunch(1, "Spinach Artichoke Dip", 5.95);

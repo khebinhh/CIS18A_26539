@@ -1,11 +1,11 @@
 package Final.Restaurant.restaurantpack;
-
+//access modifier
 public class Lunch {
     protected int itemNum;
     protected String dishName;
     protected double price;
     //set method
-    public Lunch(int i, String n, double p) { 					
+    public Lunch(int i, String n, double p) {   //quicksort
         itemNum = i;
         dishName = n;
         price = p;
